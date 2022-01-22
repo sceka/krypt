@@ -1,10 +1,19 @@
 import './App.css';
+import {Navbar, Welcome, Footer, Services, Loader, Transactions} from "./components"
 
 const App = () => {
   return (
-    <div className=''>
-      <h1 className="text-3x1 underline font-bold">Hello World</h1>
-      <h2>Hello there and welcome to my dapp</h2>
+    <div className='min-h-screen'>
+      <div className='gradient-bg-welcome'>
+        <Navbar />
+        <Welcome />
+        
+      </div>
+      <div>
+        <Services />
+        <Transactions />
+        <Footer />
+      </div>
     </div>
   );
 }
